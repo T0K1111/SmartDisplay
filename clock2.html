@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock2.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="clock2.js">
+        function doc(){document.write(input)};
+    </script>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyAIi2iVN_BFP7tn7XzvwPpEFz7oC9iJqEk"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons-wind.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">weather_value=7;lat = 35.68166;lon =140.027267;inputText1 = "千葉県習志野市";search_add = "千葉県習志野市";</script>
+    <script src="https://sitecreation.co.jp/wp-content/themes/emanon-premium-child/tpl/weather.js"></script>
+    <link id="PageStyleSheet" rel="stylesheet" href="https://sitecreation.co.jp/wp-content/themes/emanon-premium-child/tpl/style.css">
+</head>
+
+
+<body>
+    <div class="index-box">
+        <section class="box1">
+        
+          
+            <div class="sample4Area" id="makeImg">
+                <input type="checkbox" id="sample4check">
+                  <label for="sample4check">
+                    <img src="Power.png">
+                  </label>
+              </div>
+        
+         <!-- 時計枠 -->
+         
+        <div id="clock_frame">
+            <!-- 日付部分 --><!-- 時刻部分 -->
+            <p1 id="clock_date"></p1>
+            <br>
+            <!-- 時刻部分 -->
+            <p2 id="clock_time"></p2>
+          </div>
+            <!-- Weather -->
+            <style>
+                .max_temp{display:inline-block !important}
+                .min_temp{display:inline-block !important}
+                .temp{display:block !important}
+                .rain_s{display:block !important}
+                .w_bg{background:linear-gradient(to right,#ffffff, #fff)}
+            </style>
+            <div id="weather-wrapper">
+                <div id="weather1">
+            
+                </div>
+                <div id="weather2">
+                        
+                </div>
+            </div>
+            <!--  -->
+            <div class="clock">
+                <div class="scale"></div>
+                <div class="hour line"></div>
+                <div class="min line"></div>
+                <div class="sec line"></div>
+            </div>
+        </section>
+    
+        <section class="box2">
+            <div class="spotify">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1UtxjH5hbvomzvMj8reKI2?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            
+            <p3>エアコン</p3>
+            <br>
+            <div class="switchArea">
+                
+                <input type="checkbox" id="switch1">
+                <label for="switch1">
+                    <span>
+
+                    </span>
+                </label>
+                
+                <div id="swImg">
+
+                </div>
+            </div>
+            <p4>照明</p4>
+            <br>
+            <div class="switchArea">
+                
+                <input type="checkbox" id="switch2">
+                <label for="switch2">
+                    <span>
+
+                    </span>
+                </label>
+                
+                <div id="swImg">
+
+                </div>
+            </div>
+            <p5>非通知</p5>
+            <br>
+            <div class="switchArea">
+                
+                <input type="checkbox" id="switch3">
+                <label for="switch3">
+                    <span>
+
+                    </span>
+                </label>
+                
+                <div id="swImg">
+
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+
+</body>
+
+</html>
